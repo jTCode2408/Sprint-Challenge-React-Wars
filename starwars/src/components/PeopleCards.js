@@ -10,21 +10,22 @@ const PeopleCards = props => {
 //pass props for card info
     return(
         <div className = "peopleCard" key ={props.index}>
-           <h1> {props.name} </h1>
-           <p>{props.height} </p>
-           <p> {props.mass} </p>
-           <p> {props.hairColor} </p>
-           <p>  {props.skinColor} </p>
-           <p> {props.eyeColor} </p>
-           <p>  {props.born} </p>
-           <p> {props.gender} </p>
-           <p> {props.home} </p>
-           <p> {props.films} </p>
-           <p> {props.species}</p>
-            <p> {props.vehicles}</p>
-            <p>{props.url}</p>
-            <p>{props.created}</p>
-            <p>{props.edited}</p>
+           <h1> Name: {props.name} </h1>
+           <p>Height: {props.height} </p>
+           <p> Mass:  {props.mass} </p>
+           <p> Hair: {props.hairColor} </p>
+           <p> Skin: {props.skinColor} </p>
+           <p> Eyes: {props.eyeColor} </p>
+           <p> Born:  {props.born} </p>
+           <p> Gender: {props.gender} </p>
+           <p> HomeWorld: {props.home} </p>
+           <p> Films: {props.films}</p>
+           <p> Species: {props.species}</p>
+           <p>Starships: {props.starships}</p>
+            <p> Vehicles {props.vehicles}</p>
+            <p> Link: {props.url}</p>
+            <p> Created: {props.created}</p>
+            <p> Edited: {props.edited}</p>
         </div>
     );
 

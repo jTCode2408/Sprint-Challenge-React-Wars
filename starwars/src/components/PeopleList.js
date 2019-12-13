@@ -15,19 +15,19 @@ import PeopleCards from "./PeopleCards";
 export default function PeopleList (){
 const [cards, setCards] = useState([]);
 
-// useEffect (() => {
+useEffect (() => {
 
-//     axios
-//     .get (`https://swapi.co/api/people/`)
-//     .then (response => {
-//         // console.log (response.data.results);
-//         setCards(response.data.results);
+    axios
+    .get (`https://swapi.co/api/people/`)
+    .then (response => {
+        // console.log (response.data.results);
+        setCards(response.data.results);
 
-// })
-// .catch(error => {
-//     console.log ("no data", error);
-// });
-// }, []);
+})
+.catch(error => {
+    console.log ("no data", error);
+});
+}, []);
 
 
 //map to set info for each card
