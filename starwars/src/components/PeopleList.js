@@ -29,6 +29,9 @@ const [cards, setCards] = useState([]);
 // });
 // }, []);
 
+
+//map to set info for each card
+
 return ( 
 <div className = "card">
     {cards.map(card => {
