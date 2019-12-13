@@ -4,29 +4,55 @@
 //import react
 
 import React from "react";
+import { Container, Row, Col, Button, Alert} from "reactstrap";
 
 const PeopleCards = props => {
     console.log (props);
 //pass props for card info
     return(
+        <Container>
         <div className = "peopleCard" key ={props.index}>
-           <h1> Name: {props.name} </h1>
-           <p>Height: {props.height} </p>
-           <p> Mass:  {props.mass} </p>
-           <p> Hair: {props.hairColor} </p>
-           <p> Skin: {props.skinColor} </p>
-           <p> Eyes: {props.eyeColor} </p>
-           <p> Born:  {props.born} </p>
-           <p> Gender: {props.gender} </p>
-           <p> HomeWorld: {props.home} </p>
-           <p> Films: {props.films}</p>
-           <p> Species: {props.species}</p>
-           <p>Starships: {props.starships}</p>
-            <p> Vehicles {props.vehicles}</p>
-            <p> Link: {props.url}</p>
-            <p> Created: {props.created}</p>
-            <p> Edited: {props.edited}</p>
+          <h1> Name: {props.name} </h1> 
+              <Row>
+            <Button color ="primary">Height: {props.height} </Button>
+            <Button color ="success"> Mass:  {props.mass} </Button>
+            <Button color ="info"> Hair: {props.hairColor} </Button>
+            <Button color ="danger"> Skin: {props.skinColor} </Button>
+            <Button color ="secondary"> Eyes: {props.eyeColor} </Button>
+            <Button color ="warning"> Born:  {props.born} </Button>
+            <Button color ="primary"> Gender: {props.gender} </Button>    
+            </Row>    
+        
+
+        <Alert color="secondary">
+            <Col xs ="auto"> HomeWorld: {props.home} </Col>
+            </Alert>
+            <Alert color="secondary">
+           <Col xs="auto"> Films: {props.films} </Col>
+           </Alert>
+           <Alert color="secondary">
+           <Col xs="auto"> Species: {props.species} </Col>
+           </Alert>
+           <Alert color="success">
+           <Col xs="auto"> Starships: {props.starships} </Col>
+           </Alert>
+           <Alert color="success">
+           <Col xs="auto"> Vehicles: {props.vehicles} </Col>  
+           </Alert>
+<Alert color = "warning">
+    <div className = "alert-heading">
+             <Row> 
+                 <Col xs="auto">Link: {props.url}</Col>
+                 <Col xs="auto">  Created: {props.created}</Col>
+                 <Col xs="auto"> Edited: {props.edited}</Col>
+             </Row>
+             
+             </div>
+             </Alert>
         </div>
+     
+        
+        </Container>
     );
 
 }

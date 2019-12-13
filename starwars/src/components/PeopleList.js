@@ -9,6 +9,7 @@
 import React, {useState, useEffect} from "react";
 import axios from "axios";
 import PeopleCards from "./PeopleCards";
+import {Container} from "reactstrap";
 
 
 
@@ -33,6 +34,7 @@ useEffect (() => {
 //map to set info for each card
 
 return ( 
+    <Container>
 <div className = "card">
     {cards.map((card, index) => {
 
@@ -62,7 +64,9 @@ edited = {card.edited}
 );
     })}
     </div>
+    </Container>
 );
  
+
     
 }
