@@ -34,22 +34,28 @@ const [cards, setCards] = useState([]);
 
 return ( 
 <div className = "card">
-    {cards.map(card => {
+    {cards.map((card, index) => {
 
 return (
 
 <PeopleCards 
-key = {card.object}
+key = {index}
 name = {card.name}
 height = {card.height}
 mass = {card.mass}
-hairColor = {card.hairColor}
-skinColor = {card.skinColor}
-eyeColor = {card.eyeColor}
-born = {card.born}
-gender ={card.gender}
-home = {card.home}
-// films = {card.films}
+hairColor = {card.hair_color}
+skinColor = {card.skin_color}
+eyeColor = {card.eye_color}
+born = {card.birth_year}
+gender = {card.gender}
+home = {card.homeworld}
+films = {card.films}
+species = {card.species}
+vehicles = {card.vehicles}
+starships = {card.starships}
+url = {card.url}
+created = {card.created}
+edited = {card.edited}
 />
 
 
